@@ -11,6 +11,7 @@ A comprehensive church management system built with Next.js 15 and Supabase.
 - **Events Management**: Schedule and manage church events
 - **Reports Generation**: Generate various reports
 - **Settings Management**: Configure system settings
+- **AI-Powered Messaging**: Intelligent message rephrasing using OpenAI
 
 ## Tech Stack
 
@@ -19,6 +20,7 @@ A comprehensive church management system built with Next.js 15 and Supabase.
 - **State Management**: Zustand, React Query
 - **Form Handling**: React Hook Form, Zod
 - **Data Visualization**: Recharts
+- **AI Integration**: OpenAI API for intelligent text processing
 
 ## Getting Started
 
@@ -33,10 +35,12 @@ A comprehensive church management system built with Next.js 15 and Supabase.
    ```bash
    npm install
    ```
-3. Create a `.env.local` file with your Supabase credentials:
+3. Create a `.env.local` file with your Supabase and OpenAI credentials:
    ```
    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+   SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
+   OPENAI_API_KEY=your-openai-api-key
    ```
 4. Start the development server:
    ```bash
@@ -99,6 +103,7 @@ The application uses the following database tables:
 - `event_categories`: Categories for events
 - `attendance`: Attendance records
 - `attendance_records`: Individual attendance records
+- `ai_configurations`: AI service configurations for message processing
 
 ## Learn More
 
@@ -108,6 +113,7 @@ To learn more about the technologies used in this project:
 - [Supabase Documentation](https://supabase.io/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Shadcn UI Documentation](https://ui.shadcn.com)
+- [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
 
 ## License
 

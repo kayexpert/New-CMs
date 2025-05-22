@@ -7,8 +7,8 @@ import { supabaseApi } from '@/lib/supabase-api';
  */
 export async function POST(request: NextRequest) {
   try {
-    // OpenAI API key (hardcoded for simplicity in this example)
-    const apiKey = "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";
+    // Get OpenAI API key from environment variables
+    const apiKey = process.env.OPENAI_API_KEY || '';
 
     // Default prompt for rephrasing
     const defaultPrompt = "You are an expert at rephrasing text messages. Take the user's message and rephrase it to be clear, concise, and engaging while preserving the original meaning. The output must be under 160 characters. Don't just shorten the message - rewrite it completely while keeping the core message intact.";
